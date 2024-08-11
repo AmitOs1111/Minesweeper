@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+body {
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: 'Courier New', 'Courier New', Courier, monospace;
+  font-size: 16px;
+  background-color: black;
+}
+
+.container-game {
+  margin: auto;
+  /* margin: 50px, auto; */
+  max-width: 600px;
+  max-height: 600px;
+
+  background-color: rgb(210, 209, 209);
+}
+
+/* -----HEADER---- */
+.header-game {
+  margin: 3px;
+}
+
+/* ----UP-HEADER---- */
+.up-header {
+}
+.score-game {
+  display: inline;
+  /* margin-top: 14px; */
+  color: red;
+  background-color: rgb(61, 20, 20);
+  /* width: 150px; */
+  /* height: 50px; */
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+.timer-game {
+  display: inline;
+  color: red;
+  background-color: rgb(61, 20, 20);
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+.up-header button {
+  color: rgb(9, 9, 107);
+  font-size: large;
+  margin: 3px 15px;
+  cursor: pointer;
+}
+.up-header button.undo {
+  width: 100px;
+  border-radius: 20px 0px 0px 20px;
+}
+.up-header button.empty-undo {
+  /* background-color: rgb(103, 105, 105); */
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+/* ----DN-HEADER---- */
+.down-header {
+  margin: 3px;
+  padding: 5px;
+  height: 50px;
+  width: 100%;
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+.down-header button {
+  margin: 3px 150px;
+}
+
+/* ----CONTENT-GAME---- */
+.content-game {
+  /* margin: auto; */
+}
+table {
+  margin: 5px auto;
+  background-color: rgb(210, 209, 209);
+}
+tbody {
+  /* background-color: bisque; */
+}
+td {
+  width: 35px;
+  height: 35px;
+  color: blue;
+  cursor: pointer;
+}
+td img {
+  width: 20px;
+  height: 20px;
+  /* object-fit: contain; */
+  /* object-fit: cover; */
+  /* padding: 1px; */
+}
+
+.border-game {
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-bottom: 3px solid grey;
+  border-right: 3px solid grey;
+}
+
+/* ----MODAL----- */
+
+.modal-victory {
+  background-color: rgb(210, 209, 209);
+  position: absolute;
+  width: 500px;
+  min-width: 400px;
+  height: 300px;
+  top: 500px;
+  left: 35%;
+  padding: 80px;
+}
+.modal-victory button {
+  cursor: pointer;
+}
+.modal-blew-up {
+  background-color: rgb(210, 209, 209);
+  position: absolute;
+  width: 500px;
+  min-width: 400px;
+  height: 300px;
+  top: 500px;
+  left: 35%;
+  padding: 80px;
+}
+.modal-blew-up button {
+  cursor: pointer;
+}
+
+.mine {
+  /* background-color: red; */
+}
+.empty-open {
+  background-color: rgb(190, 187, 187);
+  /* border: 1px solid rgb(74, 72, 72); */
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+  border-top: 3px solid grey;
+  border-left: 3px solid grey;
+}
+.hide {
+  display: none;
+}
+.borderLevel {
+  border: 3px solid green;
+}
+/* ----CELL-TD----- */
+.neighbors1 {
+  color: rgb(204, 108, 64);
+}
+.neighbors2 {
+  color: rgb(14, 82, 45);
+}
+.neighbors3 {
+  color: rgb(94, 11, 16);
+}
+.neighbors4 {
+  color: rgb(77, 77, 176);
+}
+.neighbors5 {
+  color: rgb(1, 1, 12);
+}
+.neighbors6 {
+  color: rgb(231, 224, 33);
+}

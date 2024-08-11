@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body onload="onInit()">
+    <div class="header">
+      <h1>Minesweeper</h1>
+    </div>
+    <div class="container-game border-game">
+      <div class="header-game border-game">
+        <div class="up-header border-game">
+          <div class="score-game">000</div>
+          <button>🙂</button>
+          <div class="timer-game">012</div>
+        </div>
+        <div class="down-header border-game"></div>
+      </div>
+      <div class="content-game border-game">
+        <table class="border-game" oncontextmenu="onRightClicked(event)">
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="modal-victory hide">
+        <h1>You'r Won!</h1>
+        <h2>score:<span></span></h2>
+        <h3>Time:<span></span></h3>
+        <button onclick="onRestart()">Restart</button>
+      </div>
+      <div class="modal-blew-up hide">
+        <h2>you'r lose!</h2>
+        <h1>BOOM!</h1>
+        <button class="border-game" onclick="onRestart()">Restart</button>
+      </div>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/user-interface.js"></script>
+    <script src="js/score-header.js"></script>
+  </body>
+</html>

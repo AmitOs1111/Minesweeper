@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Minesweeper</title>
+  </head>
+  <body onload="onInit()">
+    <div class="header">
+      <h1>Minesweeper</h1>
+    </div>
+    <div class="container-game">
+      <div class="header-game">
+        <div class="up-header">
+          <div class="score-game">000</div>
+          <button>🙂</button>
+          <div class="timer-game">012</div>
+        </div>
+        <div class="down-header">
+          <button onclick="onLevelGame(this)">Beginner</button>
+          <button onclick="onLevelGame(this)">Medium</button>
+          <button onclick="onLevelGame(this)">Expert</button>
+        </div>
+      </div>
+      <div class="content-game">
+        <table>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="js/util.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/user-interface.js"></script>
+  </body>
+</html>
